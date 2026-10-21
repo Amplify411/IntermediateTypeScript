@@ -9,7 +9,7 @@ export default function Input({ label, ref, id, ...props }: InputProps) {
   return (
     <p>
       <label htmlFor={id}>{label}</label>
-      <input id={id} {...props} ref={ref} onKeyDown={()=>console.log(ref)} />
+      <input id={id} name={id} {...props} ref={ref} />
     </p>
   );
 }
